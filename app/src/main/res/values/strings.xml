@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">My Recipes</string>
     <string name="hello_user">Здраствуйте,Анастасия</string> <!--  я так понимаю, мы подменять будем имя-->
     <string name="what_kind_of_dish">Что будете готовить сегодня?</string>
     <string name="start_search">Начните поиск</string>
