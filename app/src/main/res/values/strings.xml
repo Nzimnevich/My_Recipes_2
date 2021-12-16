@@ -1,0 +1,20 @@
+<resources>
+    <string name="hello_user">Здраствуйте,Анастасия</string> <!--  я так понимаю, мы подменять будем имя-->
+    <string name="what_kind_of_dish">Что будете готовить сегодня?</string>
+    <string name="start_search">Начните поиск</string>
+    <string name="popular_recipes">Популярные рецепты</string>
+    <string name="more">Ещё...</string>
+    <string name="breakfast">Завтрак</string>
+    <string name="french_toasts_with_strawberries" translatable="false">Французские тосты с клубникой</string>
+    <string name="recommend">Рекомендуем</string>
+    <string name="blueberry_muffins" translatable="false">Черничные маффины</string>
+    <string name="glazed_salmon" translatable="false">Лосось в глазури</string>
+    <string name="search">Поиск</string>
+    <string name="my_recipes">Мои рецепты</string>
+    <string name="profile">Профиль</string>
+    <string name="ingredients">Ингридиенты</string>
+    <string name="step_by_step_recipe">Пошаговый рецепт</string>
+    <string name="bon_appetite">Приятного аппетита</string>
+    <string name="comeback">Вернуться</string>
+    <string name="next">Next</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_user">Hello, Anastasia</string>
+    <string name="more">More...</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="comeback">Return</string>
+    <string name="bon_appetite">Bon Appetite</string>
+    <string name="step_by_step_recipe">Step by step recipe</string>
+    <string name="ingredients">Ingrediens</string>
+    <string name="profile">Profile</string>
+    <string name="my_recipes">My Recipes</string>
+    <string name="search">Search</string>
+    <string name="recommend">Recommend</string>
+    <string name="popular_recipes">Popular recipes</string>
+    <string name="start_search">Start search</string>
+    <string name="what_kind_of_dish">What will you cook today?</string>
+</resources>
