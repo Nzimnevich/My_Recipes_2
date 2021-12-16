@@ -11,7 +11,7 @@ class WelcomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
-        Timber.d("Welcome Activity ", "This is log for on Create")
+        Timber.d("This is log for on Create")
 
         val button = findViewById<Button>(R.id.button_login)
         button.setOnClickListener {
