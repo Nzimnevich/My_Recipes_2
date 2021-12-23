@@ -1,6 +1,6 @@
 package com.example.myrecipes.enums
-
-enum class Indigriend(var title: String, var type: String) {
+//не уверена, что это не sealed class
+enum class Ingredient(var title: String, var type: String) {
 
     SUGAR("Сахар", "Бакалея"),
     BUTTER("Масло", "Животные продукты"),
