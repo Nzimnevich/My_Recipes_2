@@ -1,10 +1,12 @@
 package com.example.myrecipes
 
+import androidx.annotation.DrawableRes
 import com.example.myrecipes.enums.Ingredient
 
 class FoodUtils {
+    @DrawableRes
     fun resolveFoodIngredient(ingredient: Ingredient): Int {
-        var id: Int = 0
+        var id = 0
         when (ingredient) {
             Ingredient.BLUEBERRY -> id = R.drawable.ic_berry
             Ingredient.STRAWBERRY -> id = R.drawable.ic_strawberries
