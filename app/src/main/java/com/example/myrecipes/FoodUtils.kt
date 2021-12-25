@@ -6,6 +6,7 @@ import com.example.myrecipes.enums.Ingredient
 class FoodUtils {
     @DrawableRes
     fun resolveFoodIngredient(ingredient: Ingredient): Int {
+        @DrawableRes
         var id = 0
         when (ingredient) {
             Ingredient.BLUEBERRY -> id = R.drawable.ic_berry
