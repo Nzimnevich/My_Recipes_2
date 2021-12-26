@@ -17,4 +17,6 @@
     <string name="bon_appetite">Приятного аппетита</string>
     <string name="comeback">Вернуться</string>
     <string name="next">Next</string>
+    <string name="registration">Регистрация</string>
+    <string name="tv_daily_recipe">Рецепты на каждый день</string>
 </resources>
