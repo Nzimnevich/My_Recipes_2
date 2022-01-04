@@ -12,13 +12,6 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
         Timber.d("This is log for on Create")
 
-//        val button = findViewById<Button>(R.id.button_login)
-//        button.setOnClickListener {
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//        }
-
-
         val buttonAuto = findViewById<Button>(R.id.button_login)
         buttonAuto.setOnClickListener {
             val intent = Intent(this, AuthorizationActivity::class.java)
