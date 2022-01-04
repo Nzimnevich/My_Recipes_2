@@ -14,9 +14,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="365dp"
-
-        android:layout_alignParentTop="true"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:orientation="horizontal">
 
@@ -24,6 +23,8 @@
             android:id="@+id/tv_daily_recipe_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:layout_above="@id/inform"
             android:layout_centerInParent="true"
             android:text="@string/tv_daily_recipe"
             android:textColor="@color/white_for_project"
@@ -34,38 +35,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_below="@id/tv_daily_recipe_1"
+            android:layout_above="@id/tf_email"
 
             android:layout_centerInParent="true"
-            android:text="Войти"
+            android:layout_marginBottom="85dp"
+            android:text="@string/Enter"
             android:textColor="@color/white_for_project"
             android:textSize="16sp"></TextView>
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="365dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:orientation="horizontal">
-
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tf_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/email"
             app:startIconDrawable="@drawable/ic_email"
-            android:hint="Email">
+            android:layout_centerInParent="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                 />
+                android:layout_marginRight="30dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -74,9 +65,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tf_email"
-            app:startIconDrawable="@drawable/ic_password"
+            android:hint="@string/password"
             app:endIconMode="password_toggle"
-            android:hint="Пароль">
+            app:startIconDrawable="@drawable/ic_password">
 
 
             <com.google.android.material.textfield.TextInputEditText
@@ -96,7 +87,18 @@
             android:layout_below="@id/tf_password"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:text="Войти"></Button>
+            android:text="@string/Enter"></Button>
+
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_enter"
+            android:layout_alignRight="@id/btn_enter"
+            android:text="@string/question_about_password"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
 
 
         <TextView
@@ -107,7 +109,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="75dp"
             android:layout_marginBottom="13dp"
-            android:text="Нет зерегистрированы?"
+            android:text="@string/not_registered"
             android:textColor="@color/white"
             android:textSize="16sp"></TextView>
 
@@ -118,7 +120,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_toRightOf="@id/question"
-            android:text="Регистрация"
+            android:text="@string/registration"
             android:textColor="@color/orange"
             android:textSize="10sp"></Button>
 

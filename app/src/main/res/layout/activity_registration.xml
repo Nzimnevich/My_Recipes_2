@@ -15,9 +15,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="365dp"
-
-        android:layout_alignParentTop="true"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:orientation="horizontal">
 
@@ -25,6 +24,7 @@
             android:id="@+id/tv_daily_recipe_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_above="@id/inform"
             android:layout_centerInParent="true"
             android:text="@string/tv_daily_recipe"
             android:textColor="@color/white_for_project"
@@ -35,28 +35,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_below="@id/tv_daily_recipe_1"
-
+            android:layout_above="@id/tf_name"
             android:layout_centerInParent="true"
-            android:text="Регистрация"
+            android:layout_marginBottom="85dp"
+            android:text="@string/registration"
             android:textColor="@color/white_for_project"
             android:textSize="16sp"></TextView>
 
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="365dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:orientation="horizontal">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tf_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Имя"
+            android:layout_centerInParent="true"
+            android:hint="@string/name"
             app:startIconDrawable="@drawable/ic_name">
 
 
@@ -74,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tf_name"
-            android:hint="Email"
+            android:hint="@string/email"
             app:startIconDrawable="@drawable/ic_email">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -93,7 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tf_email"
-            android:hint="Пароль"
+            android:hint="@string/password"
             app:endIconMode="password_toggle"
             app:startIconDrawable="@drawable/ic_password">
 
@@ -114,7 +106,7 @@
             android:layout_below="@id/tf_password"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:text="Регистрация"></Button>
+            android:text="@string/registration"></Button>
 
 
         <TextView
@@ -125,7 +117,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="75dp"
             android:layout_marginBottom="13dp"
-            android:text="Уже зарегистрированы?"
+            android:text="@string/registration"
             android:textColor="@color/white"
             android:textSize="16sp"></TextView>
 
@@ -136,12 +128,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_toRightOf="@id/question"
-            android:text="Войдите"
+            android:text="@string/sign_in"
             android:textColor="@color/orange"
             android:textSize="10sp"></Button>
 
-
     </RelativeLayout>
-
 
 </RelativeLayout>

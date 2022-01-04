@@ -14,4 +14,27 @@
     <string name="popular_recipes">Popular recipes</string>
     <string name="start_search">Start search</string>
     <string name="what_kind_of_dish">What will you cook today?</string>
+    <string name="step_1">Preheat the oven to 200 °. Cut the vanilla stick in half lengthwise and use a knife to scrape off the seeds from both formed halves.</string>
+    <string name="step_2">Bring milk, vanilla and 40 g of sugar to a boil, remove from heat, cover and let it brew for 20 minutes.</string>
+    <string name="_500_calories">500 calories</string>
+    <string name="_10_minutes">10 minutes</string>
+    <string name="hello">Hello User!</string>
+    <string name="question_about_what_will_you_cook">What will you cook today?</string>
+    <string name="start_your_search">Start your search</string>
+    <string name="popular_dishes">Popular dishes</string>
+    <string name="french_toast_with_strawberries">French toast with strawberries</string>
+    <string name="cinnamon_sugar_toast">Cinnamon sugar toast</string>
+    <string name="not_registered">Not registered?</string>
+    <string name="question_about_password">Forgot your password?</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="question_about_registration">Not registered?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="entry">Entry</string>
+    <string name="with_pleasure">We cook with pleasure!</string>
+    <string name="Enter">Sign in</string>
+    <string name="tv_daily_recipe">Daily Recipies</string>
+    <string name="next">Next</string>
+    <string name="registration">Registration</string>
 </resources>

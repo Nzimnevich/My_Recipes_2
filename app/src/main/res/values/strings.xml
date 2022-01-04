@@ -17,6 +17,26 @@
     <string name="bon_appetite">Приятного аппетита</string>
     <string name="comeback">Вернуться</string>
     <string name="next">Next</string>
-    <string name="registration">Регистрация</string>
     <string name="tv_daily_recipe">Рецепты на каждый день</string>
+    <string name="Enter">Войти</string>
+    <string name="with_pleasure">Готовим с удовольствием!</string>
+    <string name="entry">Вход</string>
+    <string name="sign_in">Войдите</string>
+    <string name="question_about_registration">Уже зарегистрированы?</string>
+    <string name="password">Пароль</string>
+    <string name="email">Email</string>
+    <string name="name">Имя</string>
+    <string name="question_about_password">Забыли пароль?</string>
+    <string name="not_registered">Не зерегистрированы?</string>
+    <string name="cinnamon_sugar_toast">Тост с корицей и сахаром</string>
+    <string name="french_toast_with_strawberries">Французские тосты с клубникой</string>
+    <string name="popular_dishes">Популярные блюда</string>
+    <string name="start_your_search">Начните поиск</string>
+    <string name="question_about_what_will_you_cook">Что будете готовить сегодня?</string>
+    <string name="hello">Здраствуйте, User!</string>
+    <string name="_10_minutes">10 минут</string>
+    <string name="_500_calories">500 калорий</string>
+    <string name="step_1">Духовку разогреть до 200°. Палочку ванили разрезать вдоль пополам и ножом соскребсти семена из обеих образованных половинок.</string>
+    <string name="step_2">Молоко,ваниль и 40 г сах.пудры довести до кипения,снять с огня,накрыть крышкой и дать настояться 20 мин.</string>
+    <string name="registration">Регистрация</string>
 </resources>
