@@ -9,13 +9,13 @@ class AuthorizationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_authorization)
-        val button = findViewById<Button>(R.id.btn_enter)
+        val button = findViewById<Button>(R.id.enter_btn)
         button.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
-        val buttonRegistration = findViewById<Button>(R.id.btn_return_reg)
+        val buttonRegistration = findViewById<Button>(R.id.return_reg_btn)
         buttonRegistration.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)

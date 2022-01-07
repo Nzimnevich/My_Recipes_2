@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bigMarginFromEdge">30dp</dimen>
+    <dimen name="middleMarginFromEdge">24dp</dimen>
+    <dimen name="miniMarginFromEdge">16dp</dimen>
+</resources>

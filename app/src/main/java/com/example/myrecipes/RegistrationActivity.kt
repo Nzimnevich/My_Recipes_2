@@ -3,64 +3,65 @@ package com.example.myrecipes
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.Button
 import androidx.core.widget.addTextChangedListener
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
 class RegistrationActivity : AppCompatActivity() {
-   lateinit var  tiet_Name: TextInputEditText
-   lateinit var til_Name: TextInputLayout
-    lateinit var  tiet_Email: TextInputEditText
-    lateinit var til_Email: TextInputLayout
-    lateinit var  tiet_Password: TextInputEditText
-    lateinit var til_Password: TextInputLayout
+    private val tiet_Name: TextInputEditText by lazy { findViewById(R.id.name_tiet) }
+    private val til_Name: TextInputLayout by lazy { findViewById(R.id.name_tf) }
+    private val tiet_Email: TextInputEditText by lazy { findViewById(R.id.email_tiet) }
+    private val til_Email: TextInputLayout by lazy { findViewById(R.id.email_tf) }
+    private val tiet_Password: TextInputEditText by lazy { findViewById(R.id.password_tiet) }
+    private val til_Password: TextInputLayout by lazy { findViewById(R.id.password_tf) }
 
+    private val countForNameAndEmail = 5
+    private val countForPassword = 6
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
 
-        tiet_Name = findViewById(R.id.name)
-        til_Name = findViewById(R.id.tf_name)
+
 
         tiet_Name.addTextChangedListener {
-            if (it.toString().length < 5) {
-                til_Name.error = "Указаное имя меньше 5ти символов!"
-            }
-            else {
-                til_Name.error ="" //Можно ли тут обрабатывать по другому? вместо error  ставить что-то другое? не факт, что эт интуитивно понятно
+            if (it.toString().length < countForNameAndEmail) {
+                til_Name.error = String.format(
+                    resources.getString(R.string.message_about_wrong_name),
+                    countForNameAndEmail
+                )
+            } else {
+                til_Name.error = ""
             }
         }
 
-
-        tiet_Email = findViewById(R.id.email)
-        til_Email = findViewById(R.id.tf_email)
 
         tiet_Email.addTextChangedListener {
-            if (!isEmailValid(it.toString())  and (it.toString().length<5)) {
-                til_Email.error ="Указанный email должен быть больше 5ти символов и иметь @"
-            }
-            else {
-                til_Email.error =""
+            if (!isEmailValid(it.toString()) and (it.toString().length < countForNameAndEmail)) {
+                til_Email.error = String.format(
+                    resources.getString(R.string.message_about_wrong_email),
+                    countForNameAndEmail
+                )
+            } else {
+                til_Email.error = ""
             }
         }
-
-        tiet_Password = findViewById(R.id.password)
-        til_Password = findViewById(R.id.tf_password)
 
         tiet_Password.addTextChangedListener {
-            if (it.toString().length < 6) {
-                til_Password.error = "Указаный пароль меньше 6ти символов!"
-            }
-            else {
-                til_Password.error =""
+            if (it.toString().length < countForPassword) {
+                til_Password.error = String.format(
+                    resources.getString(R.string.message_about_wrong_password),
+                    countForPassword
+                )
+            } else {
+                til_Password.error = ""
             }
         }
 
 
-
-        var buttonAuth = findViewById<Button>(R.id.btn_return_auto)
+        var buttonAuth = findViewById<Button>(R.id.return_auto_btn)
         buttonAuth.setOnClickListener {
             val intent = Intent(this, AuthorizationActivity::class.java)
             startActivity(intent)
@@ -68,7 +69,7 @@ class RegistrationActivity : AppCompatActivity() {
     }
 
     private fun isEmailValid(email: String): Boolean {
-    return email.contains("@")
+        return Patterns.EMAIL_ADDRESS.matcher(email).matches()
 
     }
 

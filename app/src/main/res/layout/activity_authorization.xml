@@ -20,22 +20,22 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/tv_daily_recipe_1"
+            android:id="@+id/daily_recipe_1_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_above="@id/inform"
+            android:layout_above="@id/inform_tv"
             android:layout_centerInParent="true"
             android:text="@string/tv_daily_recipe"
             android:textColor="@color/white_for_project"
             android:textSize="24sp"></TextView>
 
         <TextView
-            android:id="@+id/inform"
+            android:id="@+id/inform_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_above="@id/tf_email"
+            android:layout_above="@id/email_tf"
 
             android:layout_centerInParent="true"
             android:layout_marginBottom="85dp"
@@ -44,7 +44,7 @@
             android:textSize="16sp"></TextView>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tf_email"
+            android:id="@+id/email_tf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
@@ -52,49 +52,49 @@
             android:layout_centerInParent="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/email"
+                android:id="@+id/email_tiet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp" />
+                android:layout_marginLeft="@dimen/bigMarginFromEdge"
+                android:layout_marginRight="@dimen/bigMarginFromEdge" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tf_password"
+            android:id="@+id/password_tf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tf_email"
+            android:layout_below="@+id/email_tf"
             android:hint="@string/password"
             app:endIconMode="password_toggle"
             app:startIconDrawable="@drawable/ic_password">
 
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/password"
+                android:id="@+id/password_tiet"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginLeft="@dimen/bigMarginFromEdge"
+                android:layout_marginRight="@dimen/bigMarginFromEdge"
                 android:inputType="textPassword" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btn_enter"
+            android:id="@+id/enter_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tf_password"
+            android:layout_below="@id/password_tf"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:text="@string/Enter"></Button>
 
         <TextView
-            android:id="@+id/tv_forgot_password"
+            android:id="@+id/forgot_password_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_enter"
-            android:layout_alignRight="@id/btn_enter"
+            android:layout_below="@+id/enter_btn"
+            android:layout_alignRight="@id/enter_btn"
             android:text="@string/question_about_password"
             android:textColor="@color/blue"
             android:textSize="16sp"
@@ -103,7 +103,7 @@
 
         <TextView
 
-            android:id="@+id/question"
+            android:id="@+id/question_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -114,12 +114,12 @@
             android:textSize="16sp"></TextView>
 
         <Button
-            android:id="@+id/btn_return_reg"
+            android:id="@+id/return_reg_btn"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_toRightOf="@id/question"
+            android:layout_toRightOf="@id/question_tv"
             android:text="@string/registration"
             android:textColor="@color/orange"
             android:textSize="10sp"></Button>

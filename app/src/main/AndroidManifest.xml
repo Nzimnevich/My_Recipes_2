@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyRecipes">
         <activity
-            android:name=".FullRecipe"
+            android:name=".FullRecipeActivity"
             android:exported="false" />
         <activity
             android:name=".AuthorizationActivity"

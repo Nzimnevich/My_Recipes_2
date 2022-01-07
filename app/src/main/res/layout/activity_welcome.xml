@@ -29,7 +29,7 @@
         android:textColor="@color/white_for_project"
         android:textSize="16sp"></TextView>
     <Button
-        android:id="@+id/button_login"
+        android:id="@+id/login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/entry"
@@ -39,13 +39,13 @@
         />
 
     <Button
-        android:id="@+id/button_registration"
+        android:id="@+id/registration_btn"
         android:layout_width="372dp"
         android:layout_height="wrap_content"
-        android:layout_above="@id/button_login"
+        android:layout_above="@id/login_btn"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginLeft="@dimen/bigMarginFromEdge"
+        android:layout_marginRight="@dimen/bigMarginFromEdge"
         android:text="@string/registration" />
 
 </RelativeLayout>
