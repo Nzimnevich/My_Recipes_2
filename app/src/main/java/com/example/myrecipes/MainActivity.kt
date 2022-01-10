@@ -17,5 +17,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, FullRecipeActivity::class.java)
             startActivity(intent)
         }
+
+        var buttonFilters: ImageButton = findViewById(R.id.filters_ibtn)
+        buttonFilters.setOnClickListener {
+            val intent = Intent(this, FilterActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
