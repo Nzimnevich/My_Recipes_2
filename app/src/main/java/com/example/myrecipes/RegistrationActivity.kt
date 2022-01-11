@@ -17,6 +17,11 @@ class RegistrationActivity : AppCompatActivity() {
         const val MAX_FOR_PASSWORD = 6
         const val MAX_FOR_EMAIL = 5
         const val MAX_FOR_NAME = 5
+
+        fun start(context: Context) {
+            val intent = Intent(context, RegistrationActivity::class.java)
+            context.startActivity(intent)
+        }
     }
 
     private val tietName: TextInputEditText by lazy { findViewById(R.id.name_tiet) }
