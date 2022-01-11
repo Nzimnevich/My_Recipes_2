@@ -37,7 +37,7 @@
     <string name="tv_daily_recipe">Daily Recipies</string>
     <string name="next">Next</string>
     <string name="registration">Registration</string>
-    <string name="message_about_wrong_password">The specified name is less than %1$s characters!</string>
-    <string name="message_about_wrong_name">The specified password is less than %1$s characters!</string>
-    <string name="message_about_wrong_email">The specified email must be more than %1$s characters and have @</string>
+    <string name="message_about_wrong_password">The specified password is less than&#160;</string>
+    <string name="message_about_wrong_name">The specified name is less than&#160;</string>
+    <string name="message_about_wrong_email">The specified email must have @ and be greater than&#160;</string>
 </resources>

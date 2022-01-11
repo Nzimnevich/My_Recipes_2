@@ -23,7 +23,7 @@ class WelcomeActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         when (v.id) {
-            R.id.login_btn ->  startActivity(Intent(this, AuthorizationActivity::class.java))
+            R.id.login_btn -> AuthorizationActivity.start(this)
             R.id.registration_btn->startActivity(Intent(this, RegistrationActivity::class.java))
         }
     }

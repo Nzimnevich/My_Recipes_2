@@ -39,7 +39,16 @@
     <string name="step_1">Духовку разогреть до 200°. Палочку ванили разрезать вдоль пополам и ножом соскребсти семена из обеих образованных половинок.</string>
     <string name="step_2">Молоко,ваниль и 40 г сах.пудры довести до кипения,снять с огня,накрыть крышкой и дать настояться 20 мин.</string>
     <string name="registration">Регистрация</string>
-    <string name="message_about_wrong_password">Указаное имя меньше %1$s символов!</string>
-    <string name="message_about_wrong_name">Указанный пароль меньше %1$s символов!</string>
-    <string name="message_about_wrong_email">Указанный email должен быть больше %1$s символов и иметь @</string>
+    <string name="message_about_wrong_password">Указанный пароль меньше чем&#160;</string>
+    <string name="message_about_wrong_name">Указаное имя меньше чем&#160;</string>
+    <string name="message_about_wrong_email">Указанный email должен быть иметь @ и быть больше&#160;</string>
+
+    <plurals name="plurals_for_count_of_characters">
+        <item quantity="zero">нет символов!</item>
+        <item quantity="one">%1$d символ!</item>
+        <item quantity="two">%1$d символа!</item>
+        <item quantity="few">%1$d символа!</item>
+        <item quantity="many">%1$d символов!</item>
+        <item quantity="other">%1$d символов!</item>
+    </plurals>
 </resources>
