@@ -40,4 +40,12 @@
     <string name="message_about_wrong_password">The specified password is less than&#160;</string>
     <string name="message_about_wrong_name">The specified name is less than&#160;</string>
     <string name="message_about_wrong_email">The specified email must have @ and be greater than&#160;</string>
+    <plurals name="plurals_for_count_of_characters">
+        <item quantity="zero">no characters!</item>
+        <item quantity="one">%1$d character!</item>
+        <item quantity="two">%1$d characters!</item>
+        <item quantity="few">%1$d characters!</item>
+        <item quantity="many">%1$d characters!</item>
+        <item quantity="other">%1$d characters!</item>
+    </plurals>
 </resources>
