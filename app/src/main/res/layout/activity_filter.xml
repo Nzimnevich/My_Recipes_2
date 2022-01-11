@@ -83,6 +83,13 @@
 
     </com.google.android.material.chip.ChipGroup>
 
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/line_1_md"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meals_cg"
+        android:layout_marginLeft="@dimen/miniMarginFromEdge"
+        android:layout_marginRight="@dimen/miniMarginFromEdge"/>
 
     <TextView
         android:id="@+id/type_of_dishes_tv"
@@ -151,6 +158,14 @@
             app:chipCornerRadius="10dp" />
 
     </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/line_2_md"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dishes_cg"
+        android:layout_marginLeft="@dimen/miniMarginFromEdge"
+        android:layout_marginRight="@dimen/miniMarginFromEdge"/>
 
     <TextView
         android:id="@+id/count_of_meals_tv"
