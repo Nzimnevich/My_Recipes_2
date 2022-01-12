@@ -1,5 +1,6 @@
 package com.example.myrecipes
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,6 +20,15 @@ class AuthorizationActivity : AppCompatActivity() {
         buttonRegistration.setOnClickListener {
             val intent = Intent(this, RegistrationActivity::class.java)
             startActivity(intent)
+        }
+    }
+
+
+    companion object {
+
+        fun start(context: Context) {
+            val intent = Intent(context, AuthorizationActivity::class.java)
+            context.startActivity(intent)
         }
     }
 }
