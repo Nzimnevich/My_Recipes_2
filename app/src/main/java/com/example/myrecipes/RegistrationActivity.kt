@@ -1,3 +1,4 @@
+
 package com.example.myrecipes
 
 import android.content.Context
@@ -7,6 +8,7 @@ import android.os.Bundle
 import android.util.Patterns
 import android.widget.Button
 import androidx.core.widget.addTextChangedListener
+import com.example.myrecipes.databinding.ActivityRegistrationBinding
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 
@@ -23,36 +25,37 @@ class RegistrationActivity : AppCompatActivity() {
             context.startActivity(intent)
         }
     }
-
-    private val tietName: TextInputEditText by lazy { findViewById(R.id.name_tiet) }
-    private val tilName: TextInputLayout by lazy { findViewById(R.id.name_tf) }
-    private val tietEmail: TextInputEditText by lazy { findViewById(R.id.email_tiet) }
-    private val tilEmail: TextInputLayout by lazy { findViewById(R.id.email_tf) }
-    private val tietPassword: TextInputEditText by lazy { findViewById(R.id.password_tiet) }
-    private val tilPassword: TextInputLayout by lazy { findViewById(R.id.password_tf) }
+    private lateinit var binding: ActivityRegistrationBinding
+    private val nameTiet: TextInputEditText by lazy { binding.nameTiet }
+    private val nameTil: TextInputLayout by lazy { binding.nameTil }
+    private val emailTiet: TextInputEditText by lazy { binding.emailTiet }
+    private val emailTil: TextInputLayout by lazy { binding.emailTil }
+    private val passwordTiet: TextInputEditText by lazy { binding.passwordTiet }
+    private val passwordTil: TextInputLayout by lazy { binding.passwordTil }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_registration)
+        binding = ActivityRegistrationBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
 
-        tietName.addTextChangedListener {
+        nameTiet.addTextChangedListener {
             var pluralsInform = resources.getQuantityString(
                 R.plurals.plurals_for_count_of_characters,
                 MAX_FOR_NAME,
                 MAX_FOR_NAME
             )
             if (it.toString().length < MAX_FOR_NAME) {
-                tilName.error = String.format(
+                nameTil.error = String.format(
                     resources.getString(R.string.message_about_wrong_name),
                     MAX_FOR_EMAIL
                 ) + pluralsInform
             } else {
-                tilEmail.error = ""
+                emailTil.error = ""
             }
         }
 
-        tietEmail.addTextChangedListener {
+        emailTiet.addTextChangedListener {
 
             var pluralsInform = resources.getQuantityString(
                 R.plurals.plurals_for_count_of_characters,
@@ -61,16 +64,16 @@ class RegistrationActivity : AppCompatActivity() {
             )
 
             if (!isEmailValid(it.toString()) and (it.toString().length < MAX_FOR_EMAIL)) {
-                tilEmail.error = String.format(
+                emailTil.error = String.format(
                     resources.getString(R.string.message_about_wrong_email),
                     MAX_FOR_EMAIL
                 ) + pluralsInform
             } else {
-                tilEmail.error = ""
+                emailTil.error = ""
             }
         }
 
-        tietPassword.addTextChangedListener {
+        passwordTiet.addTextChangedListener {
 
             var pluralsInform = resources.getQuantityString(
                 R.plurals.plurals_for_count_of_characters,
@@ -78,12 +81,12 @@ class RegistrationActivity : AppCompatActivity() {
                 MAX_FOR_PASSWORD
             )
             if (it.toString().length < MAX_FOR_NAME) {
-                tilPassword.error = String.format(
+                passwordTil.error = String.format(
                     resources.getString(R.string.message_about_wrong_password),
                     MAX_FOR_EMAIL
                 ) + pluralsInform
             } else {
-                tilEmail.error = ""
+                emailTil.error = ""
             }
         }
 
