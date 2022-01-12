@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/iv_main_fone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/daily_recipe_1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@id/inform_tv"
+            android:layout_centerInParent="true"
+            android:text="@string/tv_daily_recipe"
+            android:textColor="@color/white_for_project"
+            android:textSize="24sp"></TextView>
+
+        <TextView
+            android:id="@+id/inform_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@id/email_tf"
+
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="85dp"
+            android:text="@string/Enter"
+            android:textColor="@color/white_for_project"
+            android:textSize="16sp"></TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_tf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            app:startIconDrawable="@drawable/ic_email"
+            android:layout_centerInParent="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_tiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bigMarginFromEdge"
+                android:layout_marginRight="@dimen/bigMarginFromEdge" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_tf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_tf"
+            android:hint="@string/password"
+            app:endIconMode="password_toggle"
+            app:startIconDrawable="@drawable/ic_password">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_tiet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bigMarginFromEdge"
+                android:layout_marginRight="@dimen/bigMarginFromEdge"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/enter_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_tf"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:text="@string/Enter"></Button>
+
+        <TextView
+            android:id="@+id/forgot_password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enter_btn"
+            android:layout_alignRight="@id/enter_btn"
+            android:text="@string/question_about_password"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+
+            android:id="@+id/question_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="75dp"
+            android:layout_marginBottom="13dp"
+            android:text="@string/not_registered"
+            android:textColor="@color/white"
+            android:textSize="16sp"></TextView>
+
+        <Button
+            android:id="@+id/return_reg_btn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/question_tv"
+            android:text="@string/registration"
+            android:textColor="@color/orange"
+            android:textSize="10sp"></Button>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

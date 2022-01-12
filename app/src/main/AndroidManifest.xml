@@ -10,6 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyRecipes">
         <activity
+            android:name=".FullRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuthorizationActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
             android:name=".WelcomeActivity"
             android:exported="true">
             <intent-filter>
