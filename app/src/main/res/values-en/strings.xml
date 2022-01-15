@@ -77,4 +77,5 @@
     <string name="blueberry_muffins" translatable="false">Blueberry muffins</string>
     <string name="glazed_salmon" translatable="false">Glazed salmon</string>
     <string name="french_toasts_with_strawberries">French toasts with strawberries</string>
+    <string name="recommend_title">Recommend</string>
 </resources>

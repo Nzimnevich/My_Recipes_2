@@ -7,7 +7,7 @@
     <string name="breakfast">Завтрак</string>
     <string name="french_toasts_with_strawberries">Французские тосты с клубникой</string>
     <string name="recommend">Рекомендуем</string>
-    <string name="blueberry_muffins" translatable="false">Черничные маффины</string>
+    <string name="blueberry_muffins">Черничные маффины</string>
     <string name="glazed_salmon">Лосось в глазури</string>
     <string name="search">Поиск</string>
     <string name="my_recipes">Мои рецепты</string>
@@ -68,6 +68,7 @@
     <string name="brunch_btn">Поздний завтрак</string>
     <string name="clear_btn">Очистить</string>
     <string name="meal_title">Прием пищи</string>
+    <string name="recommend_title">Рекомендуем</string>
 
     <plurals name="plurals_for_count_of_characters">
         <item quantity="zero">нет символов!</item>
