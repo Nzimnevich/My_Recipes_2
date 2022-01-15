@@ -55,16 +55,17 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ratingBar_rb"
         android:layout_marginLeft="@dimen/middleMarginFromEdge"
-        android:src="@drawable/ic_watch"
-        android:layout_marginTop="@dimen/miniMarginFromEdge"></ImageView>
+        android:layout_marginTop="@dimen/miniMarginFromEdge"
+        android:src="@drawable/ic_watch"></ImageView>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/watch_iv"
-        android:layout_marginTop="@dimen/miniMarginFromEdge"
-        android:text="@string/_10_minutes"
         android:layout_below="@id/ratingBar_rb"
-        android:textColor="@color/dark_grey"/>
+        android:layout_marginTop="@dimen/miniMarginFromEdge"
+        android:layout_toRightOf="@id/watch_iv"
+        android:text="@string/_10_minutes"
+        android:textColor="@color/dark_grey" />
 
     <ImageView
         android:id="@+id/fire_iv"
@@ -72,8 +73,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/watch_iv"
         android:layout_marginLeft="@dimen/middleMarginFromEdge"
-        android:src="@drawable/ic_fire"
-        android:layout_marginTop="@dimen/miniMarginFromEdge"></ImageView>
+        android:layout_marginTop="@dimen/miniMarginFromEdge"
+        android:src="@drawable/ic_fire"></ImageView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -116,64 +117,72 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/ingredient1_ibtn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/ingredients_tx"
-        android:layout_marginLeft="@dimen/miniMarginFromEdge"
-        android:src="@drawable/ic_spoon" />
+    <HorizontalScrollView
+        android:id="@+id/ingredient_hscrollv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ingredients_tx">
 
-    <ImageButton
-        android:id="@+id/ingredient2_ibtn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/ingredients_tx"
-        android:layout_marginLeft="@dimen/miniMarginFromEdge"
-        android:layout_toRightOf="@id/ingredient1_ibtn"
-        android:src="@drawable/ic_butter" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/ingredient3_ibtn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/ingredients_tx"
-        android:layout_marginLeft="@dimen/miniMarginFromEdge"
-        android:layout_toRightOf="@id/ingredient2_ibtn"
-        android:src="@drawable/ic_eggs" />
+            <ImageButton
+                android:id="@+id/ingredient1_ibtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
 
-    <ImageButton
-        android:id="@+id/ingredient4_ibtn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/ingredients_tx"
-        android:layout_marginLeft="@dimen/miniMarginFromEdge"
-        android:layout_toRightOf="@id/ingredient3_ibtn"
-        android:src="@drawable/ic_glasses" />
+                android:layout_marginLeft="@dimen/miniMarginFromEdge"
+                android:src="@drawable/ic_spoon" />
 
-    <ImageButton
-        android:id="@+id/ingredient5_ibtn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/ingredients_tx"
-        android:layout_marginLeft="@dimen/miniMarginFromEdge"
-        android:layout_toRightOf="@id/ingredient4_ibtn"
-        android:src="@drawable/ic_strawberries" />
+            <ImageButton
+                android:id="@+id/ingredient2_ibtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/miniMarginFromEdge"
+                android:layout_toRightOf="@id/ingredient1_ibtn"
+                android:src="@drawable/ic_butter" />
 
-    <ImageButton
-        android:id="@+id/ingredient6_ibtn"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/ingredients_tx"
-        android:layout_marginLeft="@dimen/miniMarginFromEdge"
-        android:layout_toRightOf="@id/ingredient5_ibtn"
-        android:src="@drawable/ic_berry" />
+            <ImageButton
+                android:id="@+id/ingredient3_ibtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/miniMarginFromEdge"
+                android:layout_toRightOf="@id/ingredient2_ibtn"
+                android:src="@drawable/ic_eggs" />
+
+            <ImageButton
+                android:id="@+id/ingredient4_ibtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/miniMarginFromEdge"
+                android:layout_toRightOf="@id/ingredient3_ibtn"
+                android:src="@drawable/ic_glasses" />
+
+            <ImageButton
+                android:id="@+id/ingredient5_ibtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/miniMarginFromEdge"
+                android:layout_toRightOf="@id/ingredient4_ibtn"
+                android:src="@drawable/ic_strawberries" />
+
+            <ImageButton
+                android:id="@+id/ingredient6_ibtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/miniMarginFromEdge"
+                android:layout_toRightOf="@id/ingredient5_ibtn"
+                android:src="@drawable/ic_berry" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
 
     <TextView
         android:id="@+id/step_by_step_recipe_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ingredient1_ibtn"
+        android:layout_below="@+id/ingredient_hscrollv"
         android:layout_marginLeft="@dimen/middleMarginFromEdge"
         android:layout_marginTop="@dimen/miniMarginFromEdge"
         android:text="@string/step_by_step_recipe"
@@ -181,28 +190,37 @@
         android:textSize="16sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/step_1_tv"
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/step_by_step_recipe_tv"
-        android:layout_marginLeft="@dimen/middleMarginFromEdge"
-        android:layout_marginTop="@dimen/miniMarginFromEdge"
-        android:text="@string/step_1"
-        android:textColor="@color/black"
+        android:layout_below="@+id/step_by_step_recipe_tv">
 
-        />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/step_2_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/step_1_tv"
-        android:layout_marginLeft="@dimen/middleMarginFromEdge"
-        android:layout_marginTop="@dimen/miniMarginFromEdge"
-        android:text="@string/step_2"
-        android:textColor="@color/black" />
+            <TextView
+                android:id="@+id/step_1_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/middleMarginFromEdge"
+                android:layout_marginTop="@dimen/miniMarginFromEdge"
+                android:text="@string/step_1"
+                android:textColor="@color/black"
+                />
 
+            <TextView
+                android:id="@+id/step_2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/step_1_tv"
+                android:layout_marginLeft="@dimen/middleMarginFromEdge"
+                android:layout_marginTop="@dimen/miniMarginFromEdge"
+                android:text="@string/step_2"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+    </ScrollView>
 
     <TextView
         android:id="@+id/bon_appetite_tv"

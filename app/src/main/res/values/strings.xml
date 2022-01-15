@@ -5,10 +5,10 @@
     <string name="popular_recipes">Популярные рецепты</string>
     <string name="more">Ещё...</string>
     <string name="breakfast">Завтрак</string>
-    <string name="french_toasts_with_strawberries" translatable="false">Французские тосты с клубникой</string>
+    <string name="french_toasts_with_strawberries">Французские тосты с клубникой</string>
     <string name="recommend">Рекомендуем</string>
     <string name="blueberry_muffins" translatable="false">Черничные маффины</string>
-    <string name="glazed_salmon" translatable="false">Лосось в глазури</string>
+    <string name="glazed_salmon">Лосось в глазури</string>
     <string name="search">Поиск</string>
     <string name="my_recipes">Мои рецепты</string>
     <string name="profile">Профиль</string>
@@ -42,6 +42,32 @@
     <string name="message_about_wrong_password">Указанный пароль меньше чем&#160;</string>
     <string name="message_about_wrong_name">Указаное имя меньше чем&#160;</string>
     <string name="message_about_wrong_email">Указанный email должен быть иметь @ и быть больше&#160;</string>
+    <string name="_120_cal">120 калорий</string>
+    <string name="_10min">10мин</string>
+    <string name="_1portion">1 порция</string>
+    <string name="_135cal">135 калорий</string>
+    <string name="_15min">15мин</string>
+    <string name="lunch">Обед</string>
+    <string name="_280cal">280 калорий</string>
+    <string name="_45min">45мин</string>
+    <string name="filter">Фильтр</string>
+    <string name="calories_title_sb">Калории</string>
+    <string name="time_to_cook_sb">Время приготовления</string>
+    <string name="number_of_servings_sb">Количество порций</string>
+    <string name="apply_btn">Применить</string>
+    <string name="rating_sb">Рейтинг</string>
+    <string name="drinks_chip">Напитки</string>
+    <string name="desserts_chip">Десерты</string>
+    <string name="meat_dishes_chip">Мясные блюда</string>
+    <string name="main_course_chip">Главное блюдо</string>
+    <string name="first_dish_chip">Первое блюдо</string>
+    <string name="soups_chip">Супы</string>
+    <string name="snacks_chip">Закуски</string>
+    <string name="dish_title">Блюдо</string>
+    <string name="dinner_chip">Ужин</string>
+    <string name="brunch_btn">Поздний завтрак</string>
+    <string name="clear_btn">Очистить</string>
+    <string name="meal_title">Прием пищи</string>
 
     <plurals name="plurals_for_count_of_characters">
         <item quantity="zero">нет символов!</item>

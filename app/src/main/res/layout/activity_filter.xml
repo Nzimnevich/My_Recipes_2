@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/miniMarginFromEdge"
             android:layout_marginTop="@dimen/miniMarginFromEdge"
-            android:text="Фильтр"
+            android:text="@string/filter"
             android:textColor="@color/black"
             android:textSize="24dp"
             android:textStyle="bold" />
@@ -30,7 +30,7 @@
             android:layout_marginLeft="200dp"
             android:layout_marginTop="@dimen/miniMarginFromEdge"
             android:layout_marginRight="@dimen/miniMarginFromEdge"
-            android:text="Очистить"
+            android:text="@string/clear_btn"
             android:textColor="@color/orange"
             android:textSize="16dp"
             android:textStyle="bold" />
@@ -43,7 +43,7 @@
         android:layout_below="@id/top_ll"
         android:layout_marginLeft="@dimen/miniMarginFromEdge"
         android:layout_marginTop="@dimen/miniMarginFromEdge"
-        android:text="Прием пищи"
+        android:text="@string/meal_title"
         android:textColor="@color/black"
         android:textSize="16dp"
         android:textStyle="bold" />
@@ -68,19 +68,19 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Поздний завтрак"
+            android:text="@string/brunch_btn"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Обед"
+            android:text="@string/lunch"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ужин"
+            android:text="@string/dinner_chip"
             app:chipCornerRadius="10dp" />
 
     </com.google.android.material.chip.ChipGroup>
@@ -100,7 +100,7 @@
         android:layout_below="@id/meals_cg"
         android:layout_marginLeft="@dimen/miniMarginFromEdge"
         android:layout_marginTop="@dimen/miniMarginFromEdge"
-        android:text="Блюдо"
+        android:text="@string/dish_title"
         android:textColor="@color/black"
         android:textSize="16dp"
         android:textStyle="bold" />
@@ -117,7 +117,7 @@
             android:id="@+id/soups_ch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Супы"
+            android:text="@string/soups_chip"
             app:chipCornerRadius="10dp"
 
             />
@@ -126,37 +126,37 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Закуски"
+            android:text="@string/snacks_chip"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Первое блюдо"
+            android:text="@string/first_dish_chip"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Главное блюдо"
+            android:text="@string/main_course_chip"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Мясные блюда"
+            android:text="@string/meat_dishes_chip"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Десерты"
+            android:text="@string/desserts_chip"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Напитки"
+            android:text="@string/drinks_chip"
             app:chipCornerRadius="10dp" />
 
     </com.google.android.material.chip.ChipGroup>
@@ -176,7 +176,7 @@
         android:layout_below="@id/dishes_cg"
         android:layout_marginLeft="@dimen/miniMarginFromEdge"
         android:layout_marginTop="@dimen/miniMarginFromEdge"
-        android:text="Количество порций"
+        android:text="@string/number_of_servings_sb"
         android:textColor="@color/black"
         android:textSize="16dp"
         android:textStyle="bold" />
@@ -196,7 +196,7 @@
         android:layout_below="@id/count_of_meals_sb"
         android:layout_marginLeft="@dimen/miniMarginFromEdge"
         android:layout_marginTop="@dimen/miniMarginFromEdge"
-        android:text="Время приготовления"
+        android:text="@string/time_to_cook_sb"
         android:textColor="@color/black"
         android:textSize="16dp"
         android:textStyle="bold" />
@@ -209,7 +209,6 @@
         android:layout_marginTop="@dimen/miniMarginFromEdge"
         style="@style/FiltersStyle"/>
 
-
     <TextView
         android:id="@+id/calories_tv"
         android:layout_width="wrap_content"
@@ -217,7 +216,7 @@
         android:layout_below="@id/time_to_cook_sb"
         android:layout_marginLeft="@dimen/miniMarginFromEdge"
         android:layout_marginTop="@dimen/miniMarginFromEdge"
-        android:text="Калории"
+        android:text="@string/calories_title_sb"
         android:textColor="@color/black"
         android:textSize="16dp"
         android:textStyle="bold" />
@@ -237,7 +236,7 @@
         android:layout_below="@id/calories_sb"
         android:layout_marginLeft="@dimen/miniMarginFromEdge"
         android:layout_marginTop="@dimen/miniMarginFromEdge"
-        android:text="Рейтинг"
+        android:text="@string/rating_sb"
         android:textColor="@color/black"
         android:textSize="16dp"
         android:textStyle="bold" />
@@ -257,7 +256,7 @@
         android:layout_below="@id/rating_sb"
         android:layout_centerInParent="true"
         android:layout_marginBottom="@dimen/miniMarginFromEdge"
-        android:text="Применить" />
+        android:text="@string/apply_btn" />
 </RelativeLayout>
 
 </ScrollView>
