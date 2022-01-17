@@ -62,7 +62,7 @@
             android:layout_marginRight="@dimen/bigMarginFromEdge" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/filters_ibtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/recipe1_ibtn"
                     android:layout_width="144dp"
                     android:layout_height="86dp"
@@ -253,7 +253,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/recipe2_ibtn"
                     android:layout_width="144dp"
                     android:layout_height="86dp"
@@ -261,7 +261,7 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/ic_toasts_with_cinnamon">
 
-                </ImageButton>
+                </ImageView>
 
                 <TextView
                     android:id="@+id/type_of_meals_2_tv"
@@ -420,13 +420,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:scaleType="centerCrop"
 
-                    android:src="@drawable/ic_maffin"></ImageButton>
+                    android:src="@drawable/ic_maffin"></ImageView>
 
                 <LinearLayout
                     android:id="@+id/description_ll"
@@ -573,7 +573,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-                <ImageButton
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
