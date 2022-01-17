@@ -52,14 +52,17 @@
         android:layout_below="@id/question_about_cook_tv"
         android:hint="@string/start_your_search"
         app:hintTextColor="@color/dark_grey"
-        app:startIconDrawable="@drawable/search">
+        app:startIconDrawable="@drawable/search"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:backgroundColor="@android:color/transparent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/search_tiet"
             android:layout_width="287dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/bigMarginFromEdge"
-            android:layout_marginRight="@dimen/bigMarginFromEdge" />
+            android:layout_marginRight="@dimen/bigMarginFromEdge"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
