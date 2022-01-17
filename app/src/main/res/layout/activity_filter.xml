@@ -56,10 +56,12 @@
         android:layout_below="@+id/type_of_meals_tv"
         android:layout_marginLeft="@dimen/miniMarginFromEdge"
         android:layout_marginTop="@dimen/miniMarginFromEdge"
-        app:chipBackgroundColor="@color/orange">
+        app:chipBackgroundColor="@color/orange"
+        app:singleSelection="true">
 
         <com.google.android.material.chip.Chip
             android:id="@+id/breakfast_ch"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/breakfast"
@@ -67,18 +69,21 @@
 
         <com.google.android.material.chip.Chip
 
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/brunch_btn"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lunch"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/dinner_chip"
@@ -112,51 +117,58 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/type_of_dishes_tv"
         android:layout_marginLeft="@dimen/miniMarginFromEdge"
-        android:layout_marginTop="@dimen/miniMarginFromEdge">
+        android:layout_marginTop="@dimen/miniMarginFromEdge"
+        app:singleSelection="true">
 
         <com.google.android.material.chip.Chip
             android:id="@+id/soups_ch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:text="@string/soups_chip"
             app:chipCornerRadius="10dp"
 
             />
 
         <com.google.android.material.chip.Chip
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:text="@string/snacks_chip"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:text="@string/first_dish_chip"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:text="@string/main_course_chip"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:text="@string/meat_dishes_chip"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:text="@string/desserts_chip"
             app:chipCornerRadius="10dp" />
 
         <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:text="@string/drinks_chip"
             app:chipCornerRadius="10dp" />
 
