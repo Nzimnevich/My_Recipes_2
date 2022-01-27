@@ -22,12 +22,15 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_filter.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_full_recipe.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_nika.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_registration.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_welcome.xml" value="0.33" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/fragment_custom_bottom_sheet.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/fragment_favorite.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/fragment_profile.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/search_fragment.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/menu/menu.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/menu/nav_menu.xml" value="0.36666666666666664" />
       </map>
     </option>

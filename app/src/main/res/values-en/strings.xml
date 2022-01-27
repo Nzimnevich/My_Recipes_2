@@ -78,4 +78,7 @@
     <string name="glazed_salmon" translatable="false">Glazed salmon</string>
     <string name="french_toasts_with_strawberries">French toasts with strawberries</string>
     <string name="recommend_title">Recommend</string>
+    <string name="search_title_menu">Search</string>
+    <string name="my_recipes_title_menu">My recipes</string>
+    <string name="profile_title_menu">Profile</string>
 </resources>

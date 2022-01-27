@@ -3,4 +3,5 @@
     <dimen name="bigMarginFromEdge">30dp</dimen>
     <dimen name="middleMarginFromEdge">24dp</dimen>
     <dimen name="miniMarginFromEdge">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 </resources>
