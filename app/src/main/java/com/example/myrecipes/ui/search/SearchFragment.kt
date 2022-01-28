@@ -1,21 +1,14 @@
 package com.example.myrecipes.ui.search
 
-import android.app.Activity
-import android.content.Context
 import android.content.Intent
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.myrecipes.FullRecipeActivity
-import com.example.myrecipes.MainActivity
-import com.example.myrecipes.R
-import com.example.myrecipes.databinding.ActivityMainBinding
 import com.example.myrecipes.databinding.SearchFragmentBinding
 import com.example.myrecipes.ui.CustomBottomSheetFragment
 
@@ -49,18 +42,11 @@ class SearchFragment : Fragment() {
 
         buttonFullRecipe.setOnClickListener {
             val intent = Intent(context, FullRecipeActivity::class.java)
+            intent.putExtra("ID", 1)
             startActivity(intent)
-
-
         }
 
-
         return root
-    }
-
-
-    override fun onAttach(context: Context) {
-            super.onAttach(context)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

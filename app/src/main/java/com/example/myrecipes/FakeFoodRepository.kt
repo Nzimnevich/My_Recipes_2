@@ -1,15 +1,16 @@
 package com.example.myrecipes
 
 import com.example.myrecipes.enums.Dishes
+import com.example.myrecipes.enums.Ingredient
 import com.example.myrecipes.enums.Meals
-import org.jetbrains.annotations.TestOnly
 
 class FakeFoodRepository {
-    private val frenchToasts = Recipe(1,"Французские тосты с клубникой", Meals.BREAKFAST,Dishes.DESSERT ,linkedSetOf(),15,450,linkedSetOf(),true,3,"drawable/ic_french_toasts.png",2)
-    private val toastsWithCinnamon = Recipe(2,"Тосты с корицей и сахаром", Meals.BREAKFAST,Dishes.DESSERT ,linkedSetOf(),15,350,linkedSetOf(),false,5,"drawable/ic_toasts_with_cinnamon.png",3)
-    private val blueberryMuffins = Recipe(3,"Черничные маффины", Meals.BRUNCH,Dishes.SNACK,linkedSetOf(),45,210,linkedSetOf(),false,2,"drawable/ic_maffin.png",7)
-    val glazedSalmon = Recipe(4,"Ласось в глазури", Meals.DINNER, Dishes.MAIN_COURSE,linkedSetOf(),60,300,linkedSetOf(),true,4,"drawable/ic_glazed_salmon.png",1)
-    private val asianGlazedChicken = Recipe(5,"Asian Glazed Chicken Things",Meals.LUNCH,Dishes.MEAT_DISH, linkedSetOf(),90,500,linkedSetOf(),false,1,"drawable/ic_azia_glazet_chiken.png",5)
+
+    private val frenchToasts = Recipe(1,"Французские тосты с клубникой", Meals.BREAKFAST,Dishes.DESSERT ,arrayListOf(Ingredient.SUGAR,Ingredient.BUTTER,Ingredient.WATER,Ingredient.EGG,Ingredient.STRAWBERRY,Ingredient.BLUEBERRY),15,450,arrayListOf("шаг 1","шаг 2"),true,3,"ic_french_toasts",2)
+    private val toastsWithCinnamon = Recipe(2,"Тосты с корицей и сахаром", Meals.BREAKFAST,Dishes.DESSERT ,arrayListOf(Ingredient.SUGAR,Ingredient.BUTTER,Ingredient.WATER,Ingredient.EGG,Ingredient.STRAWBERRY,Ingredient.BLUEBERRY),15,350,arrayListOf("шаг 1","шаг 2","шаг 3"),false,5,"ic_toasts_with_cinnamon",3)
+    private val blueberryMuffins = Recipe(3,"Черничные маффины", Meals.BRUNCH,Dishes.SNACK,arrayListOf(Ingredient.SUGAR,Ingredient.BUTTER,Ingredient.WATER,Ingredient.EGG,Ingredient.BLUEBERRY),45,210,arrayListOf("шаг 1"),false,2,"ic_maffin",7)
+    val glazedSalmon = Recipe(4,"Ласось в глазури", Meals.DINNER, Dishes.MAIN_COURSE,arrayListOf(),60,300,arrayListOf("шаг 1","шаг 2","шаг 3", "шаг 4"),true,4,"ic_glazed_salmon",1)
+    private val asianGlazedChicken = Recipe(5,"Asian Glazed Chicken Things",Meals.LUNCH,Dishes.MEAT_DISH, arrayListOf(),90,500,arrayListOf("шаг 1"),false,1,"ic_azia_glazet_chiken",5)
 
     fun returnAllRecipes(): List<Recipe> {
         return listOf<Recipe>(frenchToasts,toastsWithCinnamon,blueberryMuffins,glazedSalmon,asianGlazedChicken)

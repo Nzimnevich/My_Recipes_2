@@ -35,7 +35,9 @@
     <string name="question_about_what_will_you_cook">Что будете готовить сегодня?</string>
     <string name="hello">Здраствуйте, User!</string>
     <string name="_10_minutes">10 минут</string>
+    <string name="minutes">минут</string>
     <string name="_500_calories">500 калорий</string>
+    <string name="calories">калорий</string>
     <string name="step_1">Духовку разогреть до 200°. Палочку ванили разрезать вдоль пополам и ножом соскребсти семена из обеих образованных половинок.</string>
     <string name="step_2">Молоко,ваниль и 40 г сах.пудры довести до кипения,снять с огня,накрыть крышкой и дать настояться 20 мин.</string>
     <string name="registration">Регистрация</string>
@@ -64,8 +66,8 @@
     <string name="soups_chip">Супы</string>
     <string name="snacks_chip">Закуски</string>
     <string name="dish_title">Блюдо</string>
-    <string name="dinner_chip">Ужин</string>
-    <string name="brunch_btn">Поздний завтрак</string>
+    <string name="dinner">Ужин</string>
+    <string name="brunch">Поздний завтрак</string>
     <string name="clear_btn">Очистить</string>
     <string name="meal_title">Прием пищи</string>
     <string name="recommend_title">Рекомендуем</string>

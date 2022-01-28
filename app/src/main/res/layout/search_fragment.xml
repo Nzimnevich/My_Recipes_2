@@ -109,7 +109,7 @@
                     android:src="@drawable/ic_french_toasts" />
 
                 <TextView
-                    android:id="@+id/tv_type_of_meals_tv"
+                    android:id="@+id/type_of_meals_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/recipe1_ibtn"
@@ -122,7 +122,7 @@
                     android:id="@+id/title1_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/tv_type_of_meals_tv"
+                    android:layout_below="@id/type_of_meals_tv"
                     android:layout_marginLeft="5dp"
                     android:text="@string/french_toast_with_strawberries"
                     android:textColor="@color/black"

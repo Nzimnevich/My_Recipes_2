@@ -69,8 +69,8 @@
     <string name="first_dish_chip">"First "</string>
     <string name="clear_btn">Clear</string>
     <string name="meal_title">Meal</string>
-    <string name="brunch_btn">Brunch</string>
-    <string name="dinner_chip">Dinner</string>
+    <string name="brunch">Brunch</string>
+    <string name="dinner">Dinner</string>
     <string name="dish_title">Dish</string>
     <string name="snacks_chip">Snacks</string>
     <string name="soups_chip">Soups</string>
@@ -81,4 +81,6 @@
     <string name="search_title_menu">Search</string>
     <string name="my_recipes_title_menu">My recipes</string>
     <string name="profile_title_menu">Profile</string>
+    <string name="minutes">minutes</string>
+    <string name="calories">calories</string>
 </resources>
