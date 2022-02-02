@@ -1,10 +1,15 @@
 package com.example.myrecipes
 
-import androidx.appcompat.app.AppCompatActivity
+import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.ViewGroup
+import android.view.ViewGroup.LayoutParams.MATCH_PARENT
+import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
+import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.myrecipes.databinding.ActivityFullRecipeBinding
-import com.example.myrecipes.databinding.ActivityWelcomeBinding
 import com.example.myrecipes.enums.getNameForMeals
 import com.example.myrecipes.enums.getPicturesForIngredients
 import kotlin.properties.Delegates
@@ -22,15 +27,13 @@ class FullRecipeActivity : AppCompatActivity() {
     private val countOfCalTv by lazy { binding.countOfCalTv }
     private val imageIv by lazy { binding.imageIv }
     private val isLikeCB by lazy { binding.isLikeCb }
-    private val ingredient1IV by lazy { binding.ingredient1Iv }
-    private val ingredient2IV by lazy { binding.ingredient2Iv }
-    private val ingredient3IV by lazy { binding.ingredient3Iv }
-    private val ingredient4IV by lazy { binding.ingredient4Iv }
-    private val ingredient5IV by lazy { binding.ingredient5Iv }
-    private val firstStepTv by lazy { binding.step1Tv }
-    private val secondStepTv by lazy { binding.step2Tv }
+
+    private val linearLayoutForSteps by lazy { binding.containerForStepsLl }
+    private val linearLayoutForIndigrients by lazy { binding.containerForIndigrientsLl }
 
     private lateinit var recipeFirst: Recipe
+
+    @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFullRecipeBinding.inflate(layoutInflater)
@@ -40,11 +43,19 @@ class FullRecipeActivity : AppCompatActivity() {
 
 
 
-        typeOfMealsTv.setText(getString(getNameForMeals(recipeFirst.meals)) )
-        titleForRecipeTv.setText(recipeFirst.name) //тут тоже вместо локального названия передается захардкоженное
+        typeOfMealsTv.text = getString(getNameForMeals(recipeFirst.meals))
+        titleForRecipeTv.text =
+            recipeFirst.name //тут тоже вместо локального названия передается захардкоженное
         ratingBarRb.rating = recipeFirst.rating.toFloat()
-        timeTV.setText(recipeFirst.timeToCook.toString() + getString(R.string.minutes)) //тут захардкоженные значения, как-то можно вместо этого plurals?
-        countOfCalTv.setText(recipeFirst.calories.toString() +getString(R.string.calories)) //тут захардкоженные значения, как-то можно вместо этого plurals?
+
+        timeTV.text = resources.getQuantityString(
+            R.plurals.minutes, recipeFirst.timeToCook.toInt(), recipeFirst.timeToCook.toInt()
+        )
+
+        countOfCalTv.text = resources.getQuantityString(
+            R.plurals.calories, recipeFirst.calories, recipeFirst.calories
+        )
+
         imageIv.setImageResource(
             resources.getIdentifier(
                 recipeFirst.imageLink,
@@ -54,16 +65,31 @@ class FullRecipeActivity : AppCompatActivity() {
         )
         isLikeCB.isChecked = recipeFirst.isLike
 
-        ingredient1IV.setImageResource(getPicturesForIngredients(recipeFirst.listIndigrients.get(0)))
-        ingredient2IV.setImageResource(getPicturesForIngredients(recipeFirst.listIndigrients.get(1)))
-        ingredient3IV.setImageResource(getPicturesForIngredients(recipeFirst.listIndigrients.get(2)))
-        ingredient4IV.setImageResource(getPicturesForIngredients(recipeFirst.listIndigrients.get(3)))
-        ingredient5IV.setImageResource(getPicturesForIngredients(recipeFirst.listIndigrients.get(4)))
+        recipeFirst.listIndigrients.forEach {
+            var image = ImageView(this)
+            image.setImageResource(getPicturesForIngredients(it))
 
-        firstStepTv.setText(recipeFirst.listOfSteps.get(0))//тут захардкоженные шаги
-        secondStepTv.setText(recipeFirst.listOfSteps.get(1)) //тут захардкоженные шаги
+            val marginLayoutParams = ViewGroup.MarginLayoutParams(
+                MATCH_PARENT,
+                WRAP_CONTENT
+            )
 
+            marginLayoutParams.setMargins(
+                resources.getDimension(R.dimen.miniMarginFromEdge).toInt(), 0, 0, 0
+            )
 
+            image.layoutParams = marginLayoutParams
+
+            linearLayoutForIndigrients.addView(image)
+        }
+
+        recipeFirst.listOfSteps.forEach { it ->
+            var currentTextView = TextView(this)
+            currentTextView.text = it
+            val linLayoutParam = LinearLayout.LayoutParams(MATCH_PARENT, MATCH_PARENT)
+            currentTextView.layoutParams = linLayoutParam
+            linearLayoutForSteps.addView(currentTextView)
+        }
     }
 
     fun setInformRecipe(id: Int): Recipe {

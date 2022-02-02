@@ -56,7 +56,7 @@
         android:layout_below="@id/ratingBar_rb"
         android:layout_marginLeft="@dimen/middleMarginFromEdge"
         android:layout_marginTop="@dimen/miniMarginFromEdge"
-        android:src="@drawable/ic_watch"/>
+        android:src="@drawable/ic_watch" />
 
     <TextView
         android:id="@+id/time_tv"
@@ -75,7 +75,7 @@
         android:layout_below="@id/watch_iv"
         android:layout_marginLeft="@dimen/middleMarginFromEdge"
         android:layout_marginTop="@dimen/miniMarginFromEdge"
-        android:src="@drawable/ic_fire"/>
+        android:src="@drawable/ic_fire" />
 
     <TextView
         android:id="@+id/count_of_cal_tv"
@@ -126,58 +126,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ingredients_tx">
 
-        <RelativeLayout
+        <LinearLayout
+            android:id="@+id/container_for_indigrients_ll"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/ingredient1_iv"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-
-                android:layout_marginLeft="@dimen/miniMarginFromEdge"
-                android:src="@drawable/ic_spoon" />
-
-            <ImageView
-                android:id="@+id/ingredient2_iv"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="@dimen/miniMarginFromEdge"
-                android:layout_toRightOf="@id/ingredient1_iv"
-                android:src="@drawable/ic_butter" />
-
-            <ImageView
-                android:id="@+id/ingredient3_iv"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="@dimen/miniMarginFromEdge"
-                android:layout_toRightOf="@id/ingredient2_iv"
-                android:src="@drawable/ic_eggs" />
-
-            <ImageView
-                android:id="@+id/ingredient4_iv"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="@dimen/miniMarginFromEdge"
-                android:layout_toRightOf="@id/ingredient3_iv"
-                android:src="@drawable/ic_glasses" />
-
-            <ImageView
-                android:id="@+id/ingredient5_iv"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="@dimen/miniMarginFromEdge"
-                android:layout_toRightOf="@id/ingredient4_iv"
-                android:src="@drawable/ic_strawberries" />
-
-            <ImageView
-                android:id="@+id/ingredient6_iv"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="@dimen/miniMarginFromEdge"
-                android:layout_toRightOf="@id/ingredient5_iv"
-                android:src="@drawable/ic_berry" />
-        </RelativeLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/miniMarginFromEdge"
+            android:orientation="horizontal">
+            -->
+        </LinearLayout>
     </HorizontalScrollView>
 
 
@@ -194,33 +150,18 @@
         android:textStyle="bold" />
 
     <ScrollView
-        android:layout_width="wrap_content"
+        android:id="@+id/steps_of_list_sv"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/step_by_step_recipe_tv">
 
-        <RelativeLayout
+        <LinearLayout
+            android:id="@+id/container_for_steps_ll"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/step_1_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/middleMarginFromEdge"
-                android:layout_marginTop="@dimen/miniMarginFromEdge"
-                android:text="@string/step_1"
-                android:textColor="@color/black" />
-
-            <TextView
-                android:id="@+id/step_2_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/step_1_tv"
-                android:layout_marginLeft="@dimen/middleMarginFromEdge"
-                android:layout_marginTop="@dimen/miniMarginFromEdge"
-                android:text="@string/step_2"
-                android:textColor="@color/black" />
-        </RelativeLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/miniMarginFromEdge"
+            android:layout_marginRight="@dimen/miniMarginFromEdge"
+            android:orientation="vertical"></LinearLayout>
 
     </ScrollView>
 

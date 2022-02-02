@@ -48,6 +48,15 @@
         <item quantity="many">%1$d characters!</item>
         <item quantity="other">%1$d characters!</item>
     </plurals>
+
+    <plurals name="minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="calories">
+        <item quantity="one">%d calorie</item>
+        <item quantity="other">%d calories</item>
+    </plurals>
     <string name="_10min">10min</string>
     <string name="_1portion">1 portion</string>
     <string name="_135cal">135 calories</string>
@@ -81,6 +90,4 @@
     <string name="search_title_menu">Search</string>
     <string name="my_recipes_title_menu">My recipes</string>
     <string name="profile_title_menu">Profile</string>
-    <string name="minutes">minutes</string>
-    <string name="calories">calories</string>
 </resources>

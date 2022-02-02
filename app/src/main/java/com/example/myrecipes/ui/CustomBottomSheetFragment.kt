@@ -24,8 +24,9 @@ class CustomBottomSheetFragment : BottomSheetDialogFragment() {
         val applyBtn = binding.applyBtn
         applyBtn.setOnClickListener {
             val intent = Intent(context, MainActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+            this.dismiss()
             startActivity(intent)
+
         }
 
         return root

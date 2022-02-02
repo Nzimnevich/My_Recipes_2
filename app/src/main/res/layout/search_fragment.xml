@@ -223,7 +223,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/popular_ll"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="65dp"
+            android:layout_marginLeft="@dimen/miniMarginFromEdge"
             android:layout_marginRight="@dimen/middleMarginFromEdge"
             app:cardBackgroundColor="@color/grey"
             app:cardCornerRadius="@dimen/miniMarginFromEdge">

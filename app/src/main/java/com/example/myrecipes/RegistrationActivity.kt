@@ -26,12 +26,12 @@ class RegistrationActivity : AppCompatActivity() {
         }
     }
     private lateinit var binding: ActivityRegistrationBinding
-    private val nameTiet: TextInputEditText by lazy { binding.nameTiet }
-    private val nameTil: TextInputLayout by lazy { binding.nameTil }
-    private val emailTiet: TextInputEditText by lazy { binding.emailTiet }
-    private val emailTil: TextInputLayout by lazy { binding.emailTil }
-    private val passwordTiet: TextInputEditText by lazy { binding.passwordTiet }
-    private val passwordTil: TextInputLayout by lazy { binding.passwordTil }
+    private val nameTiet: TextInputEditText by lazy{ binding.nameTiet}
+    private val nameTil: TextInputLayout by lazy{ binding.nameTil}
+    private val emailTiet: TextInputEditText by lazy{binding.emailTiet}
+    private val emailTil: TextInputLayout by lazy{ binding.emailTil}
+    private val passwordTiet: TextInputEditText by lazy{ binding.passwordTiet}
+    private val passwordTil: TextInputLayout by lazy{ binding.passwordTil}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
