@@ -28,7 +28,7 @@
             android:layout_centerInParent="true"
             android:text="@string/tv_daily_recipe"
             android:textColor="@color/white_for_project"
-            android:textSize="24sp"></TextView>
+            android:textSize="24sp"/>
 
         <TextView
             android:id="@+id/inform_tv"
@@ -41,7 +41,7 @@
             android:layout_marginBottom="85dp"
             android:text="@string/Enter"
             android:textColor="@color/white_for_project"
-            android:textSize="16sp"></TextView>
+            android:textSize="16sp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/email_til"
@@ -87,7 +87,7 @@
             android:layout_below="@id/password_til"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
-            android:text="@string/Enter"></Button>
+            android:text="@string/Enter"/>
 
         <TextView
             android:id="@+id/forgot_password_tv"
@@ -98,7 +98,7 @@
             android:text="@string/question_about_password"
             android:textColor="@color/blue"
             android:textSize="16sp"
-            android:textStyle="bold"></TextView>
+            android:textStyle="bold"/>
 
 
         <TextView
@@ -111,7 +111,7 @@
             android:layout_marginBottom="13dp"
             android:text="@string/not_registered"
             android:textColor="@color/white"
-            android:textSize="16sp"></TextView>
+            android:textSize="16sp"/>
 
         <Button
             android:id="@+id/return_reg_btn"
@@ -122,7 +122,7 @@
             android:layout_toRightOf="@id/question_tv"
             android:text="@string/registration"
             android:textColor="@color/orange"
-            android:textSize="10sp"></Button>
+            android:textSize="10sp"/>
 
 
     </RelativeLayout>

@@ -52,7 +52,7 @@
             android:textStyle="bold" />
 
         <com.google.android.material.chip.ChipGroup
-            android:id="@+id/meals_cg"
+            android:id="@+id/meals1_cg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/type_of_meals_tv"
@@ -79,6 +79,7 @@
                 app:chipCornerRadius="10dp" />
 
             <com.google.android.material.chip.Chip
+                android:id="@+id/dinner_ch"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -106,7 +107,7 @@
             android:id="@+id/type_of_dishes_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/meals_cg"
+            android:layout_below="@id/meals1_cg"
             android:layout_marginLeft="@dimen/miniMarginFromEdge"
             android:layout_marginTop="@dimen/miniMarginFromEdge"
             android:text="@string/dish_title"
@@ -115,7 +116,7 @@
             android:textStyle="bold" />
 
         <com.google.android.material.chip.ChipGroup
-            android:id="@+id/dishes_cg"
+            android:id="@+id/dishes1_cg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/type_of_dishes_tv"
@@ -189,7 +190,7 @@
             android:id="@+id/count_of_meals_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/dishes_cg"
+            android:layout_below="@id/dishes1_cg"
             android:layout_marginLeft="@dimen/miniMarginFromEdge"
             android:layout_marginTop="@dimen/miniMarginFromEdge"
             android:text="@string/number_of_servings_sb"
@@ -219,17 +220,25 @@
 
         <SeekBar
             android:id="@+id/time_to_cook_sb"
+            style="@style/FiltersStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/time_to_cook_tv"
-            android:layout_marginTop="@dimen/miniMarginFromEdge"
-            style="@style/FiltersStyle"/>
+            android:layout_marginTop="@dimen/miniMarginFromEdge" />
+
+        <TextView
+            android:id="@+id/time_to_cook_value_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_to_cook_sb"
+            android:layout_centerInParent="true"
+            android:text="0" />
 
         <TextView
             android:id="@+id/calories_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/time_to_cook_sb"
+            android:layout_below="@+id/time_to_cook_value_tv"
             android:layout_marginLeft="@dimen/miniMarginFromEdge"
             android:layout_marginTop="@dimen/miniMarginFromEdge"
             android:text="@string/calories_title_sb"
