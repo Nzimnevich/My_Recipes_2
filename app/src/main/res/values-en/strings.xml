@@ -23,7 +23,7 @@
     <string name="start_your_search">Start your search</string>
     <string name="popular_dishes">Popular dishes</string>
     <string name="french_toast_with_strawberries">French toast with strawberries</string>
-    <string name="cinnamon_sugar_toast">Cinnamon sugar toast</string>
+    <string name="cinnamon_sugar_toast">Cinnamon and sugar toasts</string>
     <string name="not_registered">Not registered?</string>
     <string name="question_about_password">Forgot your password?</string>
     <string name="name">Name</string>
@@ -48,4 +48,46 @@
         <item quantity="many">%1$d characters!</item>
         <item quantity="other">%1$d characters!</item>
     </plurals>
+
+    <plurals name="minutes">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <plurals name="calories">
+        <item quantity="one">%d calorie</item>
+        <item quantity="other">%d calories</item>
+    </plurals>
+    <string name="_10min">10min</string>
+    <string name="_1portion">1 portion</string>
+    <string name="_135cal">135 calories</string>
+    <string name="_15min">15min</string>
+    <string name="lunch">Dinner</string>
+    <string name="_280cal">280 calories</string>
+    <string name="_45min">45min</string>
+    <string name="filter">Filter</string>
+    <string name="calories_title_sb">"Calories "</string>
+    <string name="time_to_cook_sb">Time to cook</string>
+    <string name="_120_cal">120 calories</string>
+    <string name="number_of_servings_sb">Number of servings</string>
+    <string name="apply_btn">Apply</string>
+    <string name="rating_sb">Raiting</string>
+    <string name="drinks_chip">Drinks</string>
+    <string name="desserts_chip">Desserts</string>
+    <string name="meat_dishes_chip">Meat dishes</string>
+    <string name="main_course_chip">Main course</string>
+    <string name="first_dish_chip">"First "</string>
+    <string name="clear_btn">Clear</string>
+    <string name="meal_title">Meal</string>
+    <string name="brunch">Brunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="dish_title">Dish</string>
+    <string name="snacks_chip">Snacks</string>
+    <string name="soups_chip">Soups</string>
+    <string name="blueberry_muffins" translatable="false">Blueberry muffins</string>
+    <string name="glazed_salmon" translatable="false">Glazed salmon</string>
+    <string name="french_toasts_with_strawberries">French toasts with strawberries</string>
+    <string name="recommend_title">Recommend</string>
+    <string name="search_title_menu">Search</string>
+    <string name="my_recipes_title_menu">My recipes</string>
+    <string name="profile_title_menu">Profile</string>
 </resources>

@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:layout_above="@id/email_tf"
+            android:layout_above="@id/email_til"
 
             android:layout_centerInParent="true"
             android:layout_marginBottom="85dp"
@@ -44,7 +44,7 @@
             android:textSize="16sp"></TextView>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/email_tf"
+            android:id="@+id/email_til"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
@@ -61,10 +61,10 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/password_tf"
+            android:id="@+id/password_til"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/email_tf"
+            android:layout_below="@+id/email_til"
             android:hint="@string/password"
             app:endIconMode="password_toggle"
             app:startIconDrawable="@drawable/ic_password">
@@ -84,7 +84,7 @@
             android:id="@+id/enter_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/password_tf"
+            android:layout_below="@id/password_til"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:text="@string/Enter"></Button>
