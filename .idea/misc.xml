@@ -19,15 +19,19 @@
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_authorization.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_example.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_favorite_recipes.xml" value="0.17864583333333334" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_filter.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_full_recipe.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_nika.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_registration.xml" value="0.1" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/activity_welcome.xml" value="0.33" />
-        <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/fragment_custom_bottom_sheet.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/content_detail.xml" value="0.333786231884058" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/fragment_custom_bottom_sheet.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/fragment_favorite.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/fragment_profile.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/fragment_second.xml" value="0.333786231884058" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/list_item_recipe.xml" value="0.33" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/layout/search_fragment.xml" value="0.35104166666666664" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
         <entry key="..\:/Users/User/AndroidStudioProjects/MyRecipes2/app/src/main/res/menu/menu.xml" value="0.35104166666666664" />

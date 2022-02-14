@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher1_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyRecipes">
+
         <activity
             android:name=".FilterActivity"
             android:exported="false" />
