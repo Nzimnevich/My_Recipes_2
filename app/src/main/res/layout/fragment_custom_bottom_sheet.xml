@@ -67,6 +67,7 @@
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:tag="BREAKFAST"
                 android:text="@string/breakfast"
                 app:chipCornerRadius="10dp" />
 
@@ -75,6 +76,7 @@
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:tag="BRUNCH"
                 android:text="@string/brunch"
                 app:chipCornerRadius="10dp" />
 
@@ -83,6 +85,7 @@
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:tag="LUNCH"
                 android:text="@string/lunch"
                 app:chipCornerRadius="10dp" />
 
@@ -90,6 +93,7 @@
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:tag="DINNER"
                 android:text="@string/dinner"
                 app:chipCornerRadius="10dp" />
 
@@ -126,53 +130,59 @@
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/soups_ch"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:tag="SOUP"
                 android:text="@string/soups_chip"
                 app:chipCornerRadius="10dp"
-
                 />
 
             <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:tag="SNACKS"
                 android:text="@string/snacks_chip"
                 app:chipCornerRadius="10dp" />
 
             <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:tag="FIRST_COURSE"
                 android:text="@string/first_dish_chip"
                 app:chipCornerRadius="10dp" />
 
             <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:tag="MAIN_COURSE"
                 android:text="@string/main_course_chip"
                 app:chipCornerRadius="10dp" />
 
             <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:tag="MEAT_DISH"
                 android:text="@string/meat_dishes_chip"
                 app:chipCornerRadius="10dp" />
 
             <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:tag="DESSERT"
                 android:text="@string/desserts_chip"
                 app:chipCornerRadius="10dp" />
 
             <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:tag="DRINKS"
                 android:text="@string/drinks_chip"
                 app:chipCornerRadius="10dp" />
 

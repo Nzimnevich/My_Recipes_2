@@ -2,7 +2,6 @@ package com.example.myrecipes.ui.search
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,8 +13,6 @@ import com.example.myrecipes.FakeFoodRepository
 import com.example.myrecipes.FullRecipeActivity
 import com.example.myrecipes.RecipeAdapter
 import com.example.myrecipes.databinding.SearchFragmentBinding
-import com.example.myrecipes.enums.Dishes
-import com.example.myrecipes.enums.Meals
 import com.example.myrecipes.ui.CustomBottomSheetFragment
 import java.io.Serializable
 
@@ -23,7 +20,6 @@ class SearchFragment : Fragment() {
 
     private lateinit var viewModel: SearchViewModel
     private var _binding: SearchFragmentBinding? = null
-    //private val buttonFullRecipe: ImageView by lazy { binding.recipe1Ibtn }
     private var fakeFoodRepository = FakeFoodRepository()
     private val binding get() = _binding!!
     override fun onCreateView(
@@ -33,7 +29,7 @@ class SearchFragment : Fragment() {
         _binding = SearchFragmentBinding.inflate(inflater, container, false)
         val root: View = binding.root
         val filtersIbtn: ImageView = binding.filtersIbtn
-        val buttonFullRecipe=binding.recipe1Ibtn
+        val buttonFullRecipe = binding.recipe1Ibtn
 
         filtersIbtn.setOnClickListener {
             val addPhotoBottomFragmentFragment: CustomBottomSheetFragment =
@@ -46,11 +42,10 @@ class SearchFragment : Fragment() {
         }
 
         val recipesRecycleView = binding.recipesRv
-        recipesRecycleView.layoutManager= LinearLayoutManager(activity)
+        recipesRecycleView.layoutManager = LinearLayoutManager(activity)
 
-        val  recipes = fakeFoodRepository.returnAllRecipes()
-        recipesRecycleView.adapter= RecipeAdapter(recipes) //он уже зашит, как отсюда убрать?
-
+        val recipes = fakeFoodRepository.returnAllRecipes()
+        recipesRecycleView.adapter = RecipeAdapter(recipes) //он уже зашит, как отсюда убрать?
 
 
         // We set the listener on the child fragmentManager
@@ -60,8 +55,8 @@ class SearchFragment : Fragment() {
         ) { key, bundle ->
             val result: FilterHolder =
                 bundle.getSerializable("bundleKey") as FilterHolder
-            val  recipes = fakeFoodRepository.sortRecipe(result)
-            recipesRecycleView.adapter= RecipeAdapter(recipes)
+            val recipes = fakeFoodRepository.sortRecipe(result)
+            recipesRecycleView.adapter = RecipeAdapter(recipes)
 
 
         }
@@ -81,24 +76,21 @@ class SearchFragment : Fragment() {
         // TODO: Use the ViewModel
     }
 
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
-
-
 
 }
 
 
 class FilterHolder(
 
-    var selectedMeals: String =Meals.BREAKFAST.toString(),
-    var selectedDish:String = Dishes.DESSERT.toString(),
-    var selectedCountOfMeals: Int =1,
-    var selectedTimeToCook:Int=15,
-    var selectedCountOfCalories:Int=100,
-    var selectedRating:Float=3f
+    var selectedMeals: String? = null,
+    var selectedDish: String? = null,
+    var selectedNumberOfServings: Int = 0,
+    var selectedTimeToCook: Int = 0,
+    var selectedCountOfCalories: Int = 0,
+    var selectedRating: Float = 0f
 
 ) : Serializable

@@ -141,23 +141,64 @@ class FakeFoodRepository {
         return returnAllRecipes().filter { it.id == id }.get(0)
     }
 
-
     fun sortRecipe(filterHolder: FilterHolder): List<Recipe> {
         var list: List<Recipe> = returnAllRecipes()
-        list = list.
-//        filter { it.timeToCook <= filterHolder.selectedTimeToCook }.
-//        filter { it.rating == filterHolder.selectedRating }.
-        filter { it.dishes.toString().equals(filterHolder.selectedDish)}
-            //   filter { it.meals.equals(filterHolder.selectedMeals)}
-    println("***")
-        println(filterHolder.selectedDish)
+        list = filterForTime(list,filterHolder.selectedTimeToCook)
+        list = filterToDish(list,filterHolder.selectedDish)
+        list = filterToRating(list,filterHolder.selectedRating)
+        list = filterToMeals(list,filterHolder.selectedMeals)
+        list = filterToCalories(list,filterHolder.selectedCountOfCalories)
+        list = filterToNumberOfServings(list,filterHolder.selectedNumberOfServings)
 
-//        it.dishes.valueOf("Foo") == MyEnum.Foo
-            return list
+        return list
 
     }
 
+    fun filterForTime(list:List<Recipe>, timeToCook:Int): List<Recipe>{
+        var temporaryList  = list
+        if (timeToCook!=0){
+            temporaryList  = list.filter { it.timeToCook <=timeToCook  }
+        }
+        return temporaryList
+    }
 
+    fun filterToDish(list:List<Recipe>, dish:String?): List<Recipe>{
+        var temporaryList = list
+        if (dish!=null){
+           temporaryList = list.filter { it.dishes.toString() == dish }
+        }
+        return temporaryList
+    }
 
+    fun filterToRating(list:List<Recipe>, rating:Float): List<Recipe>{
+        var temporaryList  = list
+        if (rating!= 0f){
+            temporaryList  = list.filter { it.timeToCook <=rating }
+        }
+        return temporaryList
+    }
 
+    fun filterToMeals(list:List<Recipe>, meal:String?): List<Recipe>{
+        var temporaryList  = list
+        if (meal != null) {
+                temporaryList  = list.filter { it.meals.toString() == meal }
+        }
+        return temporaryList
+    }
+
+    fun filterToCalories(list:List<Recipe>, calories:Int): List<Recipe>{
+        var temporaryList  = list
+        if (calories!=0){
+            temporaryList  = list.filter { it.calories<=calories }
+        }
+        return temporaryList
+    }
+
+    fun filterToNumberOfServings(list:List<Recipe>, numbersOfServings:Int): List<Recipe>{
+        var temporaryList  = list
+        if (numbersOfServings!=0){
+            temporaryList  = list.filter { it.countServings==numbersOfServings }
+        }
+        return temporaryList
+    }
 }

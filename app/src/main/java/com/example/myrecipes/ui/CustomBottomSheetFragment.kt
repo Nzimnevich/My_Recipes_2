@@ -10,6 +10,8 @@ import androidx.annotation.Nullable
 import androidx.core.os.bundleOf
 import androidx.fragment.app.setFragmentResult
 import com.example.myrecipes.databinding.FragmentCustomBottomSheetBinding
+import com.example.myrecipes.enums.Dishes
+import com.example.myrecipes.enums.Meals
 import com.example.myrecipes.ui.search.FilterHolder
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.chip.Chip
@@ -36,21 +38,43 @@ class CustomBottomSheetFragment : BottomSheetDialogFragment() {
 
         val chipGroup: ChipGroup = binding.meals1Cg
         chipGroup.setOnCheckedChangeListener { group, checkedId ->
-            val chip: Chip = chipGroup.findViewById(checkedId)
-            data.selectedMeals = chip.text.toString()
-           //  setFragmentResult("filterChanged", bundleOf("bundleKey" to data))
+            val mealsChip: Chip = chipGroup.findViewById(checkedId)
+            data.selectedMeals =
+                when(mealsChip.tag.toString()){
+                    "BREAKFAST"-> Meals.BREAKFAST.toString()
+                    "BRUNCH"-> Meals.BRUNCH.toString()
+                    "DINNER"-> Meals.DINNER.toString()
+                    "LUNCH"->Meals.LUNCH.toString()
+
+                    else -> {""}
+                }
+
+            setFragmentResult("filterChanged", bundleOf("bundleKey" to data))
         }
 
         val chipGroupDCG: ChipGroup = binding.dishes1Cg
         chipGroupDCG.setOnCheckedChangeListener { group, checkedId ->
-            val chip1: Chip = chipGroupDCG.findViewById(checkedId)
-            data.selectedDish = chip1.text.toString()
-             setFragmentResult("filterChanged", bundleOf("bundleKey" to data))//если оставить тут, то ничего не приезжает
+            val dishesChip: Chip =
+                chipGroupDCG.findViewById(checkedId)
 
+            data.selectedDish =
+                when(dishesChip.tag.toString()){
+                    "SOUP"-> Dishes.SOUP.toString()
+                    "DESSERT"-> Dishes.DESSERT.toString()
+                    "DRINK"-> Dishes.DRINK.toString()
+                    "FIRST_COURSE"->Dishes.FIRST_COURSE.toString()
+                    "MAIN_COURSE"->Dishes.MAIN_COURSE.toString()
+                    "MEAT_DISH"->Dishes.MEAT_DISH.toString()
+                    "SNACK"->Dishes.SNACK.toString()
+
+                    else -> {""}
+                }
+
+             setFragmentResult("filterChanged", bundleOf("bundleKey" to data))//если оставить тут, то ничего не приезжает
         }
 
         val countOfMeals = binding.countOfMealsSb
-        data.selectedCountOfMeals = countOfMeals.progress
+        data.selectedNumberOfServings = countOfMeals.progress
 
 
         val timeToCook = binding.timeToCookSb
@@ -78,10 +102,6 @@ class CustomBottomSheetFragment : BottomSheetDialogFragment() {
 
         val rating = binding.ratingSb
         data.selectedRating = rating.progress.toFloat()
-
-
-
-     //   setFragmentResult("filterChanged", bundleOf("bundleKey" to data)) //если оставить тут, то приезжает дефолтно 2 рецепта
 
         return root
     }
